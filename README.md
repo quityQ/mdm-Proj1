@@ -41,6 +41,8 @@ similar dataset https://www.kaggle.com/datasets/roccoli/gpx-hike-tracks
 
 ## Ideas
 
-* Personalized Model
-    * For a specific Hikr user
-    * z.B. 100 weitere "neue" Daten eines bestimmten Benutzers 
+* UI for scraping
+* UI for model creation
+* Overview of search results
+    * save predictions to MongoDB
+    * show them on an overview including version of model
