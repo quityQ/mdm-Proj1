@@ -29,7 +29,11 @@ values = [track.values() for track in collection.find(projection={"gpx": 0, "url
 df = pd.DataFrame(columns=track.keys(), data=values).set_index("_id")
 
 df['avg_speed'] = df['length_3d']/df['moving_time']
-df['difficulty_num'] = df['difficulty'].map(lambda x: int(x[1])).astype('int32')
+
+if df['difficulty'].empty:
+    df['difficulty_num'] = df['difficulty'].map(lambda x: int(x[1])).astype('int32')
+else:
+    df['difficulty_num'] = 0
 
 # drop na values
 df.dropna()
