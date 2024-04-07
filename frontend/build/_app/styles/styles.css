@@ -1,13 +1,20 @@
 body {
     font-family: Arial, sans-serif;
+    color:aliceblue;
+    
     margin: 10;
     padding: 5;
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: fill;
+    
 }
 
 h1 {
     text-align: left;
-    margin-left: 100px;
+    margin-left: 50px;
     margin-top: 20px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 p {
@@ -35,6 +42,8 @@ button:hover {
 
 strong {
     margin-right: 10px;
+    font-size: 20px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 label {
@@ -56,12 +65,15 @@ table {
     margin-top: 20px;
     border-collapse: collapse;
     width: 80%;
+    
 }
 
 table,
 th,
 td {
     border: 1px solid #ccc;
+    background: rgba(255,255,255,0.5);
+    color: black;
 }
 
 th,
