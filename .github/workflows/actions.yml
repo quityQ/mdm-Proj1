@@ -36,3 +36,9 @@ jobs:
       - name: upload model
         working-directory: model
         run: python ./save.py -c "${{secrets.AZURE_STORAGE_CONNECTION_STRING}}"
+      
+      - name: build docker image
+        run: docker build -t bicicayb/mdm-proj1 .
+
+      - name: push docker image
+        run: docker push bicicayb/mdm-proj1:latest
