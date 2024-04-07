@@ -42,3 +42,6 @@ jobs:
 
       - name: push docker image
         run: docker push bicicayb/mdm-proj1:latest
+          with:
+            username: bicicayb
+            password: ${{ secrets.DOCKER_TOKEN }}
